@@ -5,15 +5,15 @@ global _start
 
 section .data
         STDIN                  equ 0
-		STDOUT                 equ 1
+	STDOUT                 equ 1
         SYS_READ               equ 0
-		SYS_WRITE              equ 1
+	SYS_WRITE              equ 1
         SYS_CLOSE              equ 3
         SYS_SOCKET             equ 41
         SYS_ACCEPT             equ 43
         SYS_BIND               equ 49
         SYS_LISTEN             equ 50
-		SYS_EXIT               equ 60
+	SYS_EXIT               equ 60
         EXIT_CODE              equ 0
         s_exit                 db "exit", 0
         s_echo_greetings       db "Type something:", 10, 0
